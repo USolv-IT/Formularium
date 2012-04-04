@@ -1,0 +1,53 @@
+% Notes:
+% 
+% Use 'named destinations' to open a PDF at a specified location.  These are
+% not the same as bookmarks or links.  One could also use 'PDF Open parameters':
+%
+%   http://partners.adobe.com/public/developer/en/acrobat/PDFOpenParameters.pdf
+
+\documentclass{article}
+
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage[dutch]{babel}
+\usepackage{hyperref}
+
+\graphicspath{{graphics/}}
+
+\title{USolv-IT formularium}
+
+\newcommand{\Z}{\mbox{$Z \!\! Z$}}
+\newcommand{\R}{\mbox{$I\!R$}}
+\newcommand{\N}{\mbox{$I\!N$}}
+\newcommand{\Q}{\mbox{$\bf Q $}}
+\newcommand{\C}{\mbox{$\bf C $}}
+\newcommand{\ds}{\displaystyle}
+\newcommand{\Frac}[2]{\frac{\ds #1}{\ds #2}}
+
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+
+\input{form_combinatoriek.tex}
+\input{form_analyse.tex}
+\input{form_getallen.tex}
+\input{form_algebra.tex}
+\input{form_goniometrie.tex}
+\input{form_vlakkemeetk.tex}
+\input{form_ruimtemeetk.tex}
+\input{form_logica.tex}
+
+\vspace{2em}
+\noindent\fbox{\begin{minipage}{\textwidth}\begin{center}\includegraphics{by-sa.png}\end{center}Dit werk is gelicenseerd onder een Creative Commons Naamsvermelding-GelijkDelen 3.0 Unported. Bezoek http://creativecommons.org/licenses/by-sa/3.0/ om een kopie te zien van de licentie of stuur een brief naar Creative Commons, 444 Castro Street, Suite 900, Mountain View, California, 94041, USA.\end{minipage}}
+
+\end{document}
+
+% Dit werk is gelicenseerd onder een Creative Commons
+% Naamsvermelding-GelijkDelen 3.0 Unported.
+% Bezoek http://creativecommons.org/licenses/by-sa/3.0/ om een kopie te zien 
+% van de licentie of stuur een brief naar Creative Commons, 444 Castro Street, 
+% Suite 900, Mountain View, California, 94041, USA.

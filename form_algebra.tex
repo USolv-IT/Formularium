@@ -1,0 +1,129 @@
+\section{ALGEBRA} \label{algebra}
+\hypertarget{algebra}{}
+
+\subsection{Vergelijkingen} \label{vergelijkingen}
+\hypertarget{vergelijkingen}{}
+
+\subsubsection{Eerstegraadsvergelijkingen (lineaire vergelijkingen)} \label{eerstegraadsvergelijkingen}
+\hypertarget{eerstegraadsvergelijkingen}{}
+		\begin{itemize}%eerstegraadsvergelijkingen
+		\item \textcolor{green}{Vorm.}
+		\[ax+b=0, \: a\neq 0\]
+		\item\textcolor{green}{Formule.}\newline
+		Deze vergelijking heeft altijd \'e\'en oplossing: 
+		\[x=-\ds\Frac{b}{a}\]
+		\end{itemize}%eerstegraadsvergelijkingen
+
+\subsubsection{Tweedegraadsvergelijkingen (vierkantsvergelijkingen)} \label{vierkantsvergelijkingen}
+\hypertarget{vierkantsvergelijkingen}{}
+		\begin{itemize}%tweedegraadsvergelijkingen
+		\item \textcolor{green}{Vorm.}
+		\[ax^2+bx+c=0, \: a\neq 0\]
+		\item\textcolor{green}{Formules.}\newline
+		Het aantal oplossingen hangt af van het teken van de discriminant ($D$):
+		\[D=b^2-4ac\]
+		Als $D>0$, dan zijn er twee verschillende oplossingen:
+		\[x_{1,2}=\ds\Frac{-b\pm \sqrt{D}}{2a}\]
+		Als $D=0$, dan zijn er twee gelijke oplossingen:
+		\[x_1=x_2=\ds\Frac{-b}{2a}\]
+		Als $D<0$, dan zijn er geen oplossingen.\newline\newline
+		De \hypertarget{som_en_product}{{\bf som ($s$)} en het {\bf product ($p$)}} van de oplossingen:
+		\label{som_en_product}
+		\[s=-\ds\Frac{b}{a}\:\mbox{en}\:p=\ds\Frac{c}{a}\]\newline
+		Een uitdrukking van de tweede graad ontbinden in factoren (als $D\geq 0$):\vskip 		0.5cm
+		\[ax^2+bx+c=a(x-x_1)(x-x_2)\]met $x_1, x_2$ de oplossingen van de vergelijking
+		$ax^2+bx+c=0$
+		\end{itemize}%tweedegraadsvergelijkingen
+
+\subsubsection{Bikwadratische vergelijkingen} \label{bikwadratische_vergelijkingen}
+\hypertarget{bikwadratische_vergelijkingen}{}
+		\begin{itemize}%bikwadratische vergelijkingen
+		\item \textcolor{green}{Vorm.}
+		\[ax^4+bx^2+c=0,\: a\neq 0\]
+		\item \textcolor{green}{Methode.}\newline
+		Door middel van een substitutie $t=x^2$ herleid je de bikwadratische vergelijking 		tot een vierkantsvergelijking in $t$. De gevonden oplossingen voor $t$ moet je 		daarna nog terug naar de variabele $x$ omzetten.
+		\end{itemize}%bikwadratische vergelijkingen
+
+\subsubsection{Vergelijkingen van de $n$-de graad} \label{n-de_graadsvergelijkingen}
+\hypertarget{n-de_graadsvergelijkingen}{}
+		\begin{itemize}%nde graadsvergelijkingen
+		\item \textcolor{green}{Vorm.}
+		\[a_nx^n+a_{n-1}x^{n-1}+\ldots +a_1x+a_0,\:\:a_n\neq 0\]
+		\item \textcolor{green}{Methode.}\newline
+		Probeer de $n$-de graadsuitdrukking te ontbinden in factoren, ofwel op het zicht ofwel via de methode van \hypertarget{horner}{{\bf Horner}}.\label{Horner}
+		Volgens deze laatste zoek je een deler van de vorm $x-a$.
+		\newline
+		Criterium van deelbaarheid:
+		\[x-a\: | \: f(x) \Leftrightarrow f(a)=0\]\newline
+		Verder zoek je het quoti\"ent met het rekenschema van	{\bf 		Horner}.\newline\newline\newline
+		\item \textcolor{green}{Voorbeeld.}\newline
+		$\mbox{Los op:}\: x^3+2x^2-5x+2=0$\newline
+		$f(1)=0 \: \Rightarrow\:  x-1 \: |\: f(x)$
+		\[\begin{tabular}{l|lll|l}
+		 & 1 & 2 & -5 & 2\\
+		 &   &   &    &  \\
+		1&   & 1 & 3  & -2\\
+		\hline
+		 & 1 & 3 & -2 & 0\\
+		\end{tabular}\]
+		Het quoti\"ent is dan $x^2+3x-2$, zodat we krijgen:
+		\[(x-1)(x^2+3x-2)=0\]
+		Verdere ontbinding levert:
+		\[(x-1)(x-\ds\Frac{-3+\sqrt{17}}{2})(x+\ds\Frac{-		3+\sqrt{17}}{2})=0\]\newline
+		De oplossingenverzameling is dan $\{1,\ds\Frac{-		3+\sqrt{17}}{2},\ds\Frac{-3-\sqrt{17}}{2} \}$\vskip 2cm
+		\end{itemize}%nde graadsvergelijkingen
+
+\subsubsection{Irrationale vergelijkingen} \label{irrationale_vergelijkingen}
+\hypertarget{irrationale_vergelijkingen}{}
+		Een irrationale vergelijking is een vergelijking waarbij de variabele $x$ onder het 		wortelteken voorkomt.\newline
+		\textcolor{green} {Voorbeelden:}
+		\[\sqrt{x+2}=x \hskip 3cm (1)\]
+		\vskip 0.5cm
+		\[\sqrt{x}=5-\sqrt{x+1}\hskip 2.2cm (2)\]
+		De methode van oplossen bestaat erin te kwadrateren tot de vierkantswortels 		verdwenen zijn.\newline
+		Er zijn wel enkele voorwaarden op te stellen: bestaansvoorwaarden en 		kwadrateringsvoorwaarden.\newline
+		\textcolor{green}{De oplossingen:}\newline
+		\[\sqrt{x+2}=x\]
+		De bestaansvoorwaarde: \begin{eqnarray}
+						x+2 & \geq &  0\\
+						x & \geq & -2
+						\end{eqnarray}
+		De kwadrateringsvoorwaarde: \[x \geq 0\]
+		De vergelijking wordt dan: \begin{eqnarray}
+						   \sqrt{x+2}&=&x	\\
+						   x+2 & = & x^2\\
+						   x^2-x-2 & = 0\\
+						   x=-1 & \mbox{of} & x=2		
+						   \end{eqnarray}	
+		De eerste oplossing voldoet niet aan de voorwaarden, de tweede wel, \newline 
+		dus de oplossingenverzameling is $\{2\}$.\vskip 1cm
+		\[\sqrt{x}=5-\sqrt{x+1}\]
+		\[\sqrt{x}+\sqrt{x+1}=5\]
+		De bestaansvoorwaarden: \begin{eqnarray}
+						x & \geq &  0\\
+						  &      &   \\
+						  &      &   \\ 					
+						x+1 & \geq &  0\\
+						x & \geq & -1
+						\end{eqnarray}
+		De vergelijking wordt dan: \begin{eqnarray}
+						   x+2\sqrt{x(x+1)}+x+1 & = & 25\\
+						   2\sqrt{x(x+1)} & = & 24-2x\\
+						   \sqrt{x(x+1)} & = & 12-x\\			
+						   \end{eqnarray}	
+		De kwadrateringsvoorwaarde: \begin{eqnarray}
+						    12-x & \geq &  0\\
+						    x & \leq & 12
+						    \end{eqnarray}
+		Verder krijgen we dan: \begin{eqnarray}
+						x(x+1) & = & 144-24x+x^2\\
+						x & = & \displaystyle\Frac{144}{25}
+						\end{eqnarray}
+		Deze oplossing voldoet aan alle voorwaarden, dus de oplossingenverzameling is 		$\{\displaystyle\Frac{144}{25}\}$.
+
+
+% Dit werk is gelicenseerd onder een Creative Commons
+% Naamsvermelding-GelijkDelen 3.0 Unported.
+% Bezoek http://creativecommons.org/licenses/by-sa/3.0/ om een kopie te zien 
+% van de licentie of stuur een brief naar Creative Commons, 444 Castro Street, 
+% Suite 900, Mountain View, California, 94041, USA.

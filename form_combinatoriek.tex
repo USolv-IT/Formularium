@@ -1,0 +1,147 @@
+\hypertarget{combinatoriek}{}
+\section{COMBINATORIEK} \label{combinatoriek}
+
+\hypertarget{telproblemen}{}
+\subsection{Telproblemen} \label{telproblemen}
+
+\hypertarget{variaties}{}
+\subsubsection{Variaties} \label{variaties}
+\begin{itemize}
+\item \textcolor{green}{Wat?}\newline
+Een variatie van $p$ elementen uit $n$ elementen $(p\leq n )$ is een {\bf geordend} $p$-tal van $p$ {\bf verschillende } elementen gekozen uit een gegeven verzameling van $n$ elementen.
+\item \textcolor{green}{Voorbeeld.} \newline
+Enkele variaties van 3 elementen uit$\{a, b, c, d\}$ zijn $abc, abd, acb, acd, \ldots$
+\item \textcolor{green}{Formule.} \newline
+Het aantal variaties van $p$ elementen uit $n$ elementen $(1\leq p\leq n)$:
+\[V^p_n = \displaystyle \Frac{n!}{(n-p)!}\]
+\end{itemize}
+
+\hypertarget{herhalingsvariaties}{}
+\subsubsection{Herhalingsvariaties} \label{herhalingsvariaties}
+\begin{itemize}
+\item \textcolor{green}{Wat?} \newline
+Een herhalingsvariatie van $p$ elementen uit $n$ elementen is een {\bf geordend} $p$-tal van elementen gekozen uit een gegeven verzameling van $n$ elementen. Eenzelfde element mag meer dan eens voorkomen!
+\item \textcolor{green}{Voorbeeld.} \newline
+Enkele herhalingsvariaties van 3 elementen uit $\{a, b, c, d\}$ zijn $aaa, aab, abc, aba, acc, \ldots$
+\item \textcolor{green}{Formule.} \newline
+Het aantal herhalingsvariaties van $p$ elementen uit $n$ elementen is:
+\[\bar{V}^p_n=n^p\]
+\end{itemize}
+
+\hypertarget{permutaties}{}
+\subsubsection{Permutaties} \label{permutaties}
+\begin{itemize}
+\item \textcolor{green}{Wat?} \newline
+Een permutatie van $n$ verschillende elementen is een variatie van $n$ elementen uit $n$ elementen.
+\item \textcolor{green}{Voorbeeld.} \newline
+Alle permutaties van 3 elementen uit $\{a, b, c\}$ zijn $abc, acb, bac, bca, cab, cba$.
+\item \textcolor{green}{Formule.} \newline
+Het aantal permutaties van $n$ elementen is:
+\[P_n=n!\]
+\end{itemize}
+
+\hypertarget{herhalingspermutaties}{}
+\subsubsection{Herhalingspermutaties} \label{herhalingspermutaties}
+\begin{itemize}
+\item \textcolor{green}{Wat?} \newline
+Herhalingspermutaties zijn permutaties van $n$ elementen waarbij onder de $n$ elementen dezelfde elementen meerdere malen mogen voorkomen.
+\item \textcolor{green}{Voorbeeld.} \newline
+Enkele herhalingspermutaties van ${a, a, b, c}$ zijn $aabc, abca, abac,\ldots$.
+\item \textcolor{green}{Formule.} \newline
+Stel $l_i$ het aantal keer dat elk van de $p$ verschillende elementen $a_i$ voorkomt en $n$ het totaal aantal elementen, dan is het aantal herhalingspermutaties van die $n$ elementen:
+\[\bar{P}^{l_1,l_2,\ldots,l_p}_n=\displaystyle\Frac{n!}{l_1!l_2!\ldots l_p!}\]
+\end{itemize}
+
+\hypertarget{combinaties}{}
+\subsubsection{Combinaties} \label{combinaties}
+\begin{itemize}
+\item \textcolor{green}{Wat?} \newline
+Een combinatie van $p$ elementen uit $n$ elementen $(p \leq n)$ is een deelverzameling van $p$ elementen gekozen uit een gegeven verzameling van $n$ elementen. De volgorde is niet van belang!
+\item \textcolor{green}{Voorbeeld.} \newline
+Alle combinaties van 3 elementen uit $\{a, b, c, d\}$ zijn: $\{a, b, c\}, \{a, b, d\}, \{a, c, d\}, \{b, c, d\}$
+\item \textcolor{green}{Formule.} \newline
+Het aantal combinaties van $p$ elementen uit $n$ elementen is:
+\[C^p_n=\displaystyle\Frac{n!}{p!(n-p)!}\]
+\end{itemize}
+
+\hypertarget{herhalingscombinaties}{}
+\subsubsection{Herhalingscombinaties} \label{herhalingscombinaties}
+\begin{itemize}
+\item \textcolor{green}{Wat?}\newline
+Herhalingscombinaties zijn combinaties van $p$ elementen uit $n$ elementen waarbij onder de $n$ elementen dezelfde elementen meerdere malen mogen voorkomen.
+\item \textcolor{green}{Voorbeeld.} \newline
+Enkele herhalingscombinaties van 7 elementen uit $\{a, a, a, b, b, b, c, c, c\}$ zijn $\{a, a, a, b, b, b, c\}, \{a, a, b, b, b, c, c\}, \ldots$
+\item \textcolor{green}{Formule.} \newline
+Het aantal herhalingscombinaties van $p$ elementen uit $n$ elementen is:
+\[\bar{C}^p_n=C^p_{n+p-1}\]
+\end{itemize}
+
+\hypertarget{aantal_deelverzamelingen}{}
+\subsubsection{Aantal deelverzamelingen van een verzameling} \label{aantal_deelverzamelingen}
+
+Het aantal deelverzamelingen van een verzameling met $n$ elementen is $2^n$. 
+
+\hypertarget{duivenhokprincipe}{}
+\subsubsection{Het duivenhokprincipe} \label{duivenhokprincipe}
+
+Worden er $n$ voorwerpen geplaatst in $r$ laden, met $n>r$, dan is er minstens \'e\'en lade die minstens twee voorwerpen bevat.
+
+\hypertarget{binomium}{}
+\subsubsection{Het binomium van Newton} \label{binomium}
+
+In onderstaande formules wordt volgende notatie gebruikt:
+\[\left( \begin{array}{c}n\\p \end{array} \right)=\displaystyle \Frac{n!}{p!(n-p)!}\]
+Dit noemen we de binomiaalco\"effici\"enten.\newline
+\textcolor{green}{De binomiaalformule:}
+\[(a+b)^n=\left( \begin{array}{c}n\\0 \end{array} \right)a^n + \left( \begin{array}{c}n\\1 \end{array} \right)a^{n-1}b + \left( \begin{array}{c}n\\2 \end{array} \right)a^{n-2}b^2+\ldots + \left( \begin{array}{c}n\\n-1 \end{array} \right)ab^{n-1}+\left( \begin{array}{c}n\\n \end{array} \right)b^n \]
+Of ook nog:
+\[(a+b)^n=\sum_{i=0}^n \left( \begin{array}{c}n\\i \end{array} \right)a^{n-i}b^i\]
+
+
+\hypertarget{kansrekenen}{}
+\subsection{Kansrekening} \label{kansrekenen}
+
+\hypertarget{laplace}{}
+\subsubsection{Formule van Laplace} \label{laplace}
+
+Voor volgende formules is het belangrijk de begrippen {\it uitkomstenverzameling} en {\it gebeurtenis} te begrijpen.
+\begin{itemize}
+\item Een \textcolor{green}{uitkomstenverzameling (universum)} is de verzameling van alle mogelijke uitkomsten bij een kansexperiment, bv. bij een dobbelsteen : $U =\{1, 2, 3, 4, 5, 6\}$.
+\item Een \textcolor{green}{gebeurtenis} is een deelverzameling van de uitkomstenverzameling, bij het voorbeeld van de dobbelsteen zijn $\{6\}, \{1, 2, 4\}$ mogelijke gebeurtenissen.
+\end{itemize}
+\textcolor{green}{De formule van Laplace:}\newline
+Stel $n$ het aantal elementen van het universum $U$ en $p$ het aantal elementen van de gebeurtenis $A$, dan is de kans voor de gebeurtenis ($P(A)$):\newline\newline
+\[P(A)=\displaystyle \Frac{p}{n}\]\newline
+Zo is bv. de kans om met een dobbelsteen 3 of 4 te gooien : $P(\{3,4\})= \displaystyle{ \Frac{2}{6}=\Frac{1}{3}}.$\newline\newline\newline
+
+\hypertarget{kanswetten}{}
+\subsubsection{Belangrijke kanswetten} \label{kanswetten}
+
+\begin{itemize}
+\item Zekere gebeurtenis: $P(U)=1$
+\item Onmogelijke gebeurtenis: $P(\emptyset)=0$
+\item Zij $\bar A$ (=$U\backslash A$)  het complement van de gebeurtenis $A$ , dan geldt: \[P(A)+P(\bar A)=1\]
+\item Zij $A$ en $B$ twee gebeurtenissen, dan geldt: \[P(A\cup B)=P(A) +P(B)-P(A\cap B)\]
+\item Gevolg: als $A$ en $B$ disjuncte gebeurtenissen zijn $(A\cap B=\emptyset)$, dan geldt: \[P(A\cup B)=P(A) + P(B)\]
+\item Samengestelde experimenten:
+\begin{description}
+\item [(i)] Afhankelijke deelexperimenten / voorwaardelijke kans:\vskip 0.5cm
+\textcolor{green}{Voorbeelden:} Je trekt, zonder teruglegging van de kaarten, twee kaarten uit een spel. Hoe groot is de kans dat je als eerste kaart een harten trekt en als tweede kaart een klaveren?\vskip 0.5cm
+\textcolor{green}{Formule:} Stel $p(A\:|\:B)$ de voorwaardelijke kans van A als B reeds gerealiseerd is, dan geldt: \[P(A\cap B)= P(B)\cdot P(A\:|\:B)\]
+Uitbreiding: \[P(A\cap B\cap C)=P(A)\cdot P(B\:|\:A)\cdot P(C\:|\:A\cap B)\]
+Het voorbeeld wordt dus: $P=\displaystyle\Frac{13}{52}\cdot \displaystyle\Frac{13}{51}$
+\item[(ii)] Onafhankelijke deelexperimenten:\vskip 0.5cm
+\textcolor{green}{Voorbeelden:} Je trekt, met teruglegging van de kaarten, twee kaarten uit een spel. Wat is de kans dat de eerste kaart een harten is en de tweede een klaveren?
+\vskip 0.5cm
+\textcolor{green}{Formule:} Zij $A$ en $B$ onafhankelijke gebeurtenissen, dan geldt:
+\[P(A\cap B)=P(A)\cdot P(B)\] 
+Het voorbeeld wordt dus: $P=\displaystyle\Frac{13}{52}\cdot \displaystyle\Frac{13}{52}$
+\end{description}
+\end{itemize}
+
+
+% Dit werk is gelicenseerd onder een Creative Commons
+% Naamsvermelding-GelijkDelen 3.0 Unported.
+% Bezoek http://creativecommons.org/licenses/by-sa/3.0/ om een kopie te zien 
+% van de licentie of stuur een brief naar Creative Commons, 444 Castro Street, 
+% Suite 900, Mountain View, California, 94041, USA.

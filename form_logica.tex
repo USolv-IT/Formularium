@@ -1,0 +1,73 @@
+\section{LOGICA} \label{logica}
+\hypertarget{logica}{}
+
+\subsection{Verklaring van de gebruikte symbolen} \label{verklaring_symbolen}
+\hypertarget{verklaring_symbolen}{}
+In wat volgt worden volgende symbolen gebruikt:\vskip 0.5cm
+\begin{tabular}{l|l}
+symbool & verklaring \\
+\hline
+$P, Q, R$ & uitspraken \\
+$\neg$ & niet \\
+$\vee$ & of \\
+$\wedge$ & en \\
+$\Rightarrow$ & als...dan \\
+$\Leftrightarrow$ & als en slechts als \\
+$\forall$ & voor alle\\
+$\exists$ & er bestaat\\
+\end{tabular}\vskip 0.5cm
+
+\subsection{Logische stellingen} \label{logische_stellingen}
+\hypertarget{logische_stellingen}{}
+\begin{enumerate}%logische stellingen
+\item $\neg(\neg P)\:\Leftrightarrow\: P$
+\item $(P\:\Rightarrow\: Q) \:\Leftrightarrow\: (\neg P \vee Q)$
+\item $((P \:\Rightarrow\: Q)\wedge P)\:\Rightarrow\: Q$
+\item $((P \:\Rightarrow\: Q)\wedge \neg Q)\:\Rightarrow\: \neg P$
+\item $(\neg(P \:\wedge\: Q)\wedge P)\:\Rightarrow\: \neg Q$
+\item $(P \vee Q)\wedge\neg Q)\:\Rightarrow\:P$
+\item \textcolor{green}{Contrapositie van de implicatie:}$(P\:\Rightarrow\: Q) \:\Leftrightarrow\: (\neg Q \:\Rightarrow\: \neg P)$
+\item \textcolor{green}{\hypertarget{de_morgan}{Wetten van De Morgan:}}\label{de_morgan}\newline
+\begin{tabular}{c}
+$\neg(P\wedge Q)\:\Leftrightarrow\:\neg P \vee \neg Q $\\
+$\neg(P \vee Q)\:\Leftrightarrow\:\neg P \wedge \neg Q$
+\end{tabular}
+\item \textcolor{green}{Commutativiteiten:}\newline
+\begin{tabular}{rcl}
+$P \wedge Q$ & $\Leftrightarrow $ & $Q \wedge P$\\
+$P \vee Q$ & $\Leftrightarrow $ & $Q \vee P$\\
+$(P \:\Leftrightarrow\: Q)$ & $\Leftrightarrow $ & $(Q \:\Leftrightarrow\: P$)\\
+\end{tabular}
+\item \textcolor{green}{Associativiteiten:}\newline
+\begin{tabular}{rcl}
+$(P \wedge Q)\wedge R$ & $\Leftrightarrow $ & $P \wedge (Q \wedge R)$\\
+$(P \vee Q)\vee R$ & $\Leftrightarrow $ & $P \vee (Q \vee R)$\\
+$((P \:\Leftrightarrow\: Q)\:\Leftrightarrow\: R)$ & $\Leftrightarrow $ & $(P\:\Leftrightarrow\: (Q \:\Leftrightarrow\: R))$\\
+\end{tabular}
+\item \textcolor{green}{Distributiviteiten:}\newline
+\begin{tabular}{rcl}
+$P \wedge (Q\vee R)$ & $\Leftrightarrow $ & $(P \wedge Q) \vee (P\wedge R)$\\
+$P \vee (Q\wedge R)$ & $\Leftrightarrow $ & $(P \vee Q) \wedge (P\vee R)$\\
+\end{tabular}
+\item \textcolor{green}{Transitiviteiten:}\newline
+\begin{tabular}{rcl}
+$((P \:\Rightarrow\: Q)\wedge (Q\:\Rightarrow\: R))$ & $ \Rightarrow $ & $(P \:\Rightarrow\: R)$ \\
+$((P \:\Leftrightarrow\: Q)\wedge (Q\:\Leftrightarrow\: R))$ & $ \Rightarrow $ & $(P \:\Leftrightarrow\: R)$ \\
+\end{tabular}
+\end{enumerate}%logische stellingen
+\vskip 0.5cm
+
+\subsection{Uitspraakvormen met kwantoren} \label{uitspraakvormen_kwantoren}
+\hypertarget{uitspraakvormen_kwantoren}{}
+Stel $P(x)$ een uitspraakvorm in de veranderlijke $x$ en $A$ een referentieverzameling.\newline Dan gelden volgende wetten:\vskip 0.5cm
+\begin{tabular}{rcl}
+$\neg(\forall x \in A:P(x)) $ & $\Leftrightarrow$ & $\exists\: x \in A: \neg P(x)$\\
+$\neg(\exists x \in A:P(x)) $ & $\Leftrightarrow$ & $\forall\: x \in A: \neg P(x)$\\
+\end{tabular}
+
+
+% Dit werk is gelicenseerd onder een Creative Commons
+% Naamsvermelding-GelijkDelen 3.0 Unported.
+% Bezoek http://creativecommons.org/licenses/by-sa/3.0/ om een kopie te zien 
+% van de licentie of stuur een brief naar Creative Commons, 444 Castro Street, 
+% Suite 900, Mountain View, California, 94041, USA.
