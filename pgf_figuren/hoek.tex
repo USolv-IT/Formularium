@@ -1,0 +1,15 @@
+\definecolor{qqwuqq}{rgb}{0,0.39,0}
+\definecolor{qqqqff}{rgb}{0,0,1}
+\begin{tikzpicture}[scale=0.4,line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+\clip(0,0) rectangle (5,5);
+\draw [shift={(1,1)},color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (0,0) -- (0:0.55) arc (0:38.66:0.55) -- cycle;
+\draw [domain=1.0:5.0] plot(\x,{(--7-0*\x)/7});
+\draw [domain=1.0:5.0] plot(\x,{(--1--4*\x)/5});
+\begin{scriptsize}
+\fill [color=qqqqff] (1,1) circle (1.5pt);
+\draw[color=qqqqff] (0.71,0.83) node {$A$};
+\draw[color=qqwuqq] (1.95,1.33) node {$\alpha$};
+\draw[color=black] (3.9,0.8) node {$a$};
+\draw[color=black] (3.4,3.4) node {$b$};
+\end{scriptsize}
+\end{tikzpicture}
