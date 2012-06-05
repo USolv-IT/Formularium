@@ -124,9 +124,21 @@ Zij een functie $f(x)$ gegeven en beschouwen we de functies $af(x-\alpha)+\beta$
 		\item \textcolor{green}{Formules.}\newline
 		\hypertarget{euclidische_deling}{{\bf Euclidische deling:}}\label{euclidische_deling} zij $f(x), d(x) \neq 0 \in\R 		[x]$ dan bestaat er juist \'e\'en $q(x)$ en $r(x) \in\R [x]$ zodat geldt:
 		 \[f(x)=d(x)\cdot q(x)+r(x)\:\:\mbox{met 		graad}(r(x))<\:\mbox{graad}(d(x))\:\mbox{of}\:r(x)=0\]\newline
-		{\bf Praktisch voorbeeld}\newline
-		%\docLink[tekening]{euclid.jpg}{\includegraphics{tekening.gif}}\newline
-                \includegraphics{euclid.jpg}
+		{\bf Praktisch voorbeeld}:
+		\begin{center}
+    {\renewcommand{\tabcolsep}{1pt}
+    \begin{tabular}{rrrrrrrrr|lll}
+         &   &$x^3$&   &$-2x^2$&$+x$  &   &$-4$ &&$x^2$&$+5x$&$-3$\\
+      \cline{10-12}
+      $-$&$($&$x^3$&   &$+5x^2$&$-3x$ &$)$&     &&$x$  &$-7$\\
+      \cline{1-7}
+         &   &     &   &$-7x^2$&$+4x$ &   &$-4$ &\\
+         &   &$-$  &$($&$-7x^2$&$-35x$&   &$+21$&$)$\\
+      \cline{3-9}
+         &   &     &   &       &$39x$ &   &$-25$&\\
+    \end{tabular}
+    }
+    \end{center}
 
 		\hypertarget{reststelling}{{\bf Reststelling:}}\label{reststelling} De rest van een deling van $f(x)$ door $x-a$ 		is gelijk aan $f(a)$\newline\newline
 		{\bf Criterium van deelbaarheid:} \[x-a \: |\: f(x)\:\Leftrightarrow\: f(a)=0\]
@@ -137,7 +149,7 @@ Zij een functie $f(x)$ gegeven en beschouwen we de functies $af(x-\alpha)+\beta$
 		\item[*]De som van twee gelijknamige {\it oneven} machten is deelbaar door de som 		van de grondtallen.
 		\[x^{2n+1}+a^{2n+1}=(x+a)(x^{2n}-ax^{2n-1}+a^2x^{2n-2}-\ldots-a^{2n-1}x+a^{2n})\]
 		\end{itemize}
-		{\bf Methode van Horner:} zie %\docLink[formularium]{form_algebra.tex}[n-de graadsvergelijkingen]{$n$-de graadsvergelijkingen}
+		{\bf Methode van Horner:} zie \ref{n-de_graadsvergelijkingen}.
 		\end{itemize}%veeltermfuncties
 
 \hypertarget{rationale_functies}{}
