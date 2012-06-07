@@ -326,6 +326,28 @@ f(x) & = & a\sin{x} + b\cos{x}\\
   \end{center}
 \end{itemize}
 
+\subsection{Differentiaalrekening}
+
+\subsubsection{Rekenregels} \label{rekenregels_afgeleiden}
+
+\begin{align*}
+  Dc &= 0\\
+  Dx &= 1\\
+  Dx^n &= n\cdot x^{n-1}\quad n\in \mathbb{Q}_0\\
+  \\
+  D(f+g) &= Df + Dg\\
+  D(f\cdot g) &= fDg + gDf\\
+  D(c\cdot f) &= c\cdot Df\\
+  D\left(\frac{f}{g}\right) &= \frac{gDf-fDg}{g^2}\\
+  \\
+  D\left[\left(g\circ f\right)(x)\right] &= Dg\left[f(x)\right]\cdot Df(x)\\
+  \\
+  D(\sin x) &= \cos x\\
+  D(\cos x) &= -\sin x\\
+  D(\tan x) &= \frac{1}{\cos^2 x}\\
+  D(\cot x) &= -\frac{1}{\sin^2 x}\\
+\end{align*}
+
 
 % Dit werk is gelicenseerd onder een Creative Commons
 % Naamsvermelding-GelijkDelen 3.0 Unported.
